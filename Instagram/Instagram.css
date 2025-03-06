@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #000000;
+}
+
+#main-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+#banner-container,
+#form-container {
+    flex: 1 1 0;
+    width: 50%;
+    text-align: center;
+}
+
+#banner-container {
+    text-align: right;
+}
+
+#banner-container img {
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#form-box {
+    background-color: #000000;
+    border: 1px solid #7e7a7a;
+    width: 350px;
+    margin-top: 30px;
+}
+
+#logo-insta {
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form input {
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #000000;
+    border: 1px solid #7e7a7a;
+    border-radius: 3px;
+    width: 268px;
+    margin: 5px auto;
+}
+
+#login-form input[type="submit"] {
+    background-color: #1c98eb;
+    color: #ffffff;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.separator {
+    position: relative;
+    border-top: 1px solid #363333;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #bbb;
+    background-color: #000000;
+    top: -6px;
+    width: 50px;
+    margin-left: -25px; /* bom comando para centralizar elementos absolutos, apenas colocar metade da largura como margem */
+    font-size: 13px;
+}
+
+#facebook-login {
+    margin-bottom: 25px;
+}
+
+#facebook-login a {
+    text-decoration: none;
+    color: #4588ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-login a:hover {
+    color: #fafafa;
+}
+
+#facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+#facebook-login span {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+#forgot-pass {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+#forgot-pass a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#forgot-pass a:hover {
+    text-decoration: underline solid #373799;
+}
+
+#register-container {
+    background-color: #000000;
+    border: 1px solid #7e7a7a;
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+#register-container p {
+    font-size: 14px;
+    color: #fafafa;
+}
+
+#register-container a {
+    color: #4a95f6;
+font-weight: bold;
+text-decoration: none;
+}
+
+#register-container a:hover {
+    text-decoration: underline solid #4a95f6;
+}
+
+#get-app-container {
+    text-align: center;
+    width: 350px;
+}
+
+#get-app-container p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+#get-app-container img {
+        width: 136px;
+        height: 40px;
+        transition: 0.3s;
+}
+
+#get-app-container img:hover {
+    width: 150px;
+    height: 45px;
+    position:initial;
+}
+
+#get-app-container a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #footer-links {
+    display: flex;
+    list-style: none;
+}
+
+#footer-links li {
+    margin-right: 16px;
+}
+
+#footer-links a,
+#copyright,
+#pt-br {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+    background-color: #000000;
+}
+
+#copyright,
+#pt-br {
+    margin-top: 14px;
+    text-decoration: none;
+    background-color: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-links li:hover {
+    text-decoration: underline solid #807f7f;
+}
+
+@media (max-width: 450px) {
+body {
+    background-color: #fff;
+}
+
+#banner-container {
+    display: none;
+}
+#main-container,
+#form-box {
+    margin-top: 0;
+}
+
+#form-container,
+#form-box,
+#register-container,
+#get-app-container {
+    width: 100%;
+    border: none;
+}
+
+footer {
+    width: 90%;
+}
+
+#footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+}
